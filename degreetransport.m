@@ -1,13 +1,13 @@
 function [outputArgl] = degreetransport(inputArgl)
-%½«¶È·ÖÃë×ª»»³É¶ÈµÄĞ¡Êı 
-%Ã¿Ò»ĞĞ·Ö±ğÊäÈë¶È·ÖÃë
+%å°†åº¦åˆ†ç§’è½¬æ¢æˆåº¦çš„å°æ•° 
+%æ¯ä¸€è¡Œåˆ†åˆ«è¾“å…¥åº¦åˆ†ç§’
 %example:
 %inputArgl=[30 30 30 ; 15 30 0 ; 30 15 0]
 %degreetransport(inputArgl)
 %outputArgl=[30.5083 ; 15.5000 ; 30.2500]
-input_size = size(inputArgl)
+input_size = size(inputArgl);
 for i = 1:input_size(1,1)
-    outputArgl(i,1) = inputArgl(i,1) + inputArgl(i,2) / 60 + inputArgl(i,3) / 3600
+    outputArgl(i,1) = inputArgl(i,1) + inputArgl(i,2) / 60 + inputArgl(i,3) / 3600;
 end
 
 
